@@ -1,0 +1,249 @@
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td,
+form,
+pre,
+menu {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 14px;
+  color: #333333;
+  min-width: 1230px;
+  // overflow-y: hidden;
+  // font-family:"Microsoft YaHei";
+  font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.padding-content {
+  padding: 4px 0;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+img {vertical-align: middle;}
+
+.block {display: block;}
+.hide {display: none;}
+.displayflex {display: flex;}
+.pointer {cursor: pointer;}
+.inlineBlock {display: inline-block;}
+
+.text-center {text-align: center;}
+.align-c {text-align: center;}
+
+.font-weight {font-weight: 900 !important;}
+.display-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mr-5 {
+  margin-right: 5px !important;
+}
+.mr-10 {
+  margin-right: 10px !important;
+}
+.mr-15 {
+  margin-right: 15px !important;
+}
+
+.ml-10 {
+  margin-left: 10px !important;
+}
+.ml-15 {
+  margin-left: 15px !important;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+.mt-4 {
+  margin-top: 4px;
+}
+.mt-5 {
+  margin-top: 5px;
+}
+.mt-10 {
+  margin-top: 10px !important;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+.mb-5 {
+  margin-bottom: 5px !important;
+}
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.padding-l20 {
+  padding-left: 20px !important;
+}
+.pr-5 {padding-right: 5px;}
+
+.pl-5 {padding-left: 5px;}
+.pl-10 {padding-left: 10px;}
+
+
+.w-20 {width: 20px;}
+.w-40 {width: 40px;}
+.w-60 {width: 60px;}
+.w-100 {width: 100px;}
+.w-160 {width: 160px;}
+.h-10 {height: 10px;}
+.h-30 {height: 30px;}
+.h-40 {height: 40px;}
+
+.p15_lr {padding: 0 15px;}
+.p20_lr {padding: 0 20px;}
+
+.com-color {color:"#09f";}
+.cn_bg_color {background:#F9F9F9;padding: 6px;}
+.size-12 {font-size: 12px;}
+.size-14 {font-size: 14px;}
+.size-16 {font-size: 16px;}
+.size-24 {font-size: 24px;}
+
+.line-h-20 {line-height: 20px;}
+.line-h-22 {line-height: 22px;}
+.line-h-26 {line-height:26px;}
+.line-h-30 {line-height: 30px;}
+.line-h-35 {line-height: 35px;}
+.line-h-40 {line-height: 40px;}
+
+.relative {position:relative;}
+.ellipsis-1{ display:-webkit-box;overflow:hidden; white-space:normal!important; text-overflow:ellipsis; word-wrap:break-word; -webkit-line-clamp:1; -webkit-box-orient:vertical}
+.ellipsis-2{ display:-webkit-box;overflow:hidden; white-space:normal!important; text-overflow:ellipsis; word-wrap:break-word; -webkit-line-clamp:2; -webkit-box-orient:vertical}
+.ellipsis-3{ display:-webkit-box;overflow:hidden; white-space:normal!important; text-overflow:ellipsis; word-wrap:break-word; -webkit-line-clamp:3; -webkit-box-orient:vertical}
+.ellipsis-4{ display:-webkit-box;overflow:hidden; white-space:normal!important; text-overflow:ellipsis; word-wrap:break-word; -webkit-line-clamp:4; -webkit-box-orient:vertical}
+
+ /* 隐藏滚动条 */
+ .outContainer-scroll {overflow: hidden;position: relative;}     /*兼容IE*/
+ .inContainer-scroll {overflow-x:hidden;overflow-y:scroll;position: absolute;top:0;bottom:0;left: 0;right:-18px;} /*兼容IE*/
+
+ input{
+  /*去除阴影*/
+  box-shadow:none;
+  /*聚焦input的蓝色边框*/
+  outline: none;
+  /*textarea 禁止拖拽*/
+  resize: none; 
+  /*去除边框*/
+  border: none; 
+  /*常用于IOS下移除原生样式*/
+  -webkit-appearance: none;
+  /*点击高亮的颜色*/
+  -webkit-tap-highlight-color:rgba(0,0,0,0); 
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #c9c9c9;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #c9c9c9;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #c9c9c9;
+}
+
+
+body .el-scrollbar__wrap {
+  overflow-x: hidden;
+}
